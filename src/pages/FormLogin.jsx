@@ -43,7 +43,7 @@ class FormLogin extends React.Component  {
 
 				if (response.data.User===this.state.form.User && response.data.Password===this.state.form.Password ) {
 					
-					console.log("puto");
+					console.log("put");
 				}
 				else {	
 					window.location.href = '/form'

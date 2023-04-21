@@ -11,8 +11,12 @@ import User from "./components/User";
 import { LoginButton } from "./Login";
 import { useAuth0 } from "@auth0/auth0-react";
 import { Profile } from "./Profile";
-import { LogoutButton } from "./Logout";
+import  LogoutButton  from "./Logout";
 import { ProfileBar } from "./pages/ProfileBar";
+import PagoM1 from "./pages/PagoM1";
+import PagoM2 from "./pages/PagoM2";
+import PagoM3 from "./pages/PagoM3";
+import Pruebas from "./pages/Pruebas";
 function App() {
   const [user, setUser] = useState(null);
 
@@ -31,7 +35,8 @@ function App() {
 
       <Routes>
         <Route index element={<Landing />} />
-        <Route path="/landing" element={<Landing />} />
+        <Route path="/Proyecto" element={<Landing />} />
+        <Route path="landing" element={<Landing/>}/>
         <Route element={<ProtectedRoute isAllowed={!!user} />}>
           <Route path="/home" element={<Home />} />
           <Route path="/dashboard" element={<Dashboard />} />
@@ -40,7 +45,10 @@ function App() {
         <Route path="/about" element={<About/>} />
         <Route path="/formr" element={<FormRegister/>} />
         <Route path="/user" element={<User/>} />
-        
+        <Route path="/uno" element={<PagoM1/>}/>
+        <Route path="/dos" element={<PagoM2/>}/>
+        <Route path="/tres" element={<PagoM3/>}/>
+        <Route path="/p" element={<Pruebas/>}/>
         <Route
           path="/analytics"
           element={
@@ -74,7 +82,7 @@ function Navigation() {
   return (
   <div>
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     
     <img class="img" src="https://firebasestorage.googleapis.com/v0/b/ghostgym-f8921.appspot.com/o/Gold%20Luxury%20Initial%20Circle%20Logo.png?alt=media&token=cd5fe2a1-d98d-4596-aab2-bbdbb04ac748" alt="" width="60" height="60"  />
     <button id="BtnCanva"   data-bs-toggle="offcanvas" data-bs-target="#demo">
@@ -98,7 +106,7 @@ function Navigation() {
       </ul>
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <button className="btn btn-outline-warning" type="submit">Search</button>
       </form>
       {isAuthenticated ? (
           <>
