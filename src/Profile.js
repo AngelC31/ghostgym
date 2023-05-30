@@ -12,7 +12,7 @@ export const Profile = () => {
   return (
     isAuthenticated && (
 
-        <div class="container card text-center col-8 bg-dark">
+        <div class="card text-center col-12 bg-dark">
           <br/><br/><br/><br/>
   <div class="card-header bg-warning">
     Usuario
@@ -21,7 +21,7 @@ export const Profile = () => {
   <img src={user.picture} alt={user.name} />
     <h5 class="card-title">{user.name}</h5>
     <p class="card-text">{user.email}.</p>
-    <a href="#" class="btn btn-dark"><LogoutButton/></a>
+    <a href="#" class="btn btn-warning"><LogoutButton/></a>
   </div>
   <br/><br/>
       </div>

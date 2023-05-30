@@ -6,7 +6,7 @@ function LogoutButton() {
   const { logout } = useAuth0();
 
   return (
-    <button className="buttonLogout btn-dark btn-outline-warning" onClick={() => {
+    <button className="btn btn-dark btn-outline-warning" onClick={() => {
         localStorage.removeItem('pagoRealizado');
         logout({ returnTo: window.location.origin })
     }}>
