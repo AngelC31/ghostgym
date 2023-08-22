@@ -33,7 +33,7 @@ function App() {
     <BrowserRouter>
       <Navigation />
       <Routes>
-       
+        <Route index element={<Landing />} />
         <Route path="/Proyecto" element={<Landing />} />
         <Route path="landing" element={<Landing/>}/>
         <Route element={<ProtectedRoute isAllowed={!!user} />}>
