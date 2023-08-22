@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ghostgym/static/css/main.05f85234.css",
+    "main.js": "/ghostgym/static/js/main.945e01e7.js",
+    "index.html": "/ghostgym/index.html",
+    "main.05f85234.css.map": "/ghostgym/static/css/main.05f85234.css.map",
+    "main.945e01e7.js.map": "/ghostgym/static/js/main.945e01e7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.05f85234.css",
+    "static/js/main.945e01e7.js"
+  ]
+}
