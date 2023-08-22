@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from "react";
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import { Admin, Analytics, Dashboard, Home, } from "./pages";
@@ -31,10 +32,8 @@ function App() {
   return (
     <BrowserRouter>
       <Navigation />
-
-
       <Routes>
-        <Route index element={<Landing />} />
+       
         <Route path="/Proyecto" element={<Landing />} />
         <Route path="landing" element={<Landing/>}/>
         <Route element={<ProtectedRoute isAllowed={!!user} />}>
