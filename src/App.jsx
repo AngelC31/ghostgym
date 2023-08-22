@@ -41,6 +41,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/dashboard" element={<Dashboard />} />
         </Route>
+        <Route path="/" element={<Home/>}/>
         <Route path="/form" element={<FormLogin/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/formr" element={<FormRegister/>} />
