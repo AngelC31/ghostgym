@@ -37,7 +37,10 @@ function App() {
         <Route index element={<Landing />} />
         <Route path="/Proyecto" element={<Landing />} />
         <Route path="landing" element={<Landing/>}/>
-        
+        <Route element={<ProtectedRoute isAllowed={!!user} />}>
+          <Route path="/home" element={<Home />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+        </Route>
         <Route path="/" element={<Home/>}/>
         <Route path="/form" element={<FormLogin/>} />
         <Route path="/about" element={<About/>} />
