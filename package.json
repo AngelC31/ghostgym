@@ -2,7 +2,6 @@
   
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://AngelC31.github.io/ghostgym",
   "private": true,
   "dependencies": {
     "@auth0/auth0-react": "^2.0.1",
@@ -31,9 +30,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
+
     
   },
   "eslintConfig": {
