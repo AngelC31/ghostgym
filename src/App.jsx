@@ -94,13 +94,13 @@ function Navigation() {
       <Link class="navbar-brand" to="/" >Ghost Gym</Link>
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <Link class="nav-link active" aria-current="page" to="/home">Home</Link>
+          <Link class="nav-link active" aria-current="page" to="/home">CASA</Link>
         </li>
         <li class="nav-item">
-          <Link class="nav-link active" aria-current="page" to="/user">User</Link>
+          <Link class="nav-link active" aria-current="page" to="/user">Usuario</Link>
         </li>
         <li class="nav-item">
-          <Link class="nav-link active" aria-current="page" to="/about">About</Link>
+          <Link class="nav-link active" aria-current="page" to="/about">Acerca de</Link>
         </li>
 
       </ul>
