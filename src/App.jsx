@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from "react";
+import { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import { Admin, Analytics, Dashboard, Home, } from "./pages";
 import Landing from "./pages/Landing";
@@ -75,6 +75,22 @@ function App() {
     </BrowserRouter>
   );
 }
+
+async function registerSW() {
+    if ('serviceWorker' in navigator) {
+      try {
+        await navigator.serviceWorker.register(`${process.env.PUBLIC_URL}/sw.js`);
+        console.log('Service Worker registered successfully');
+      } catch (error) {
+        console.error('Error registering Service Worker:', error);
+      }
+    }
+  }
+
+useEffect(() => {
+    
+  
+    registerSW();})
 
 function Navigation() {
   
